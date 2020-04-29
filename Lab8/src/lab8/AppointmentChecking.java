@@ -1,7 +1,6 @@
 package lab8;
 import java.util.ArrayList;
 
-
 public class AppointmentChecking {
 	ArrayList<Appointment> appointments;
 
@@ -12,7 +11,6 @@ public class AppointmentChecking {
 		appointments.add(a);
 
 	}
-	
 	public void find(int day, int month, int year) {
 		for (Appointment a: appointments) {
 			if(a.occursOn(day, month, year)) {
@@ -21,4 +19,3 @@ public class AppointmentChecking {
 			}
 	}			
 }
-			

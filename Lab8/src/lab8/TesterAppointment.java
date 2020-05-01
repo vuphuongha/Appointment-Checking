@@ -9,11 +9,17 @@ public class TesterAppointment {
 		list.addAppointment(new Daily ("Visit to grandma", 12,8,2020));
 		list.addAppointment(new OneTime ("Dentist", 20,6,2020));
 		
-		int dayinput = 9;
-		int monthinput = 7;
-		int yearinput = 2019;
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter a date (like 2015 10 31): " + dayinput + "/" + monthinput + "/" + yearinput);
+		int dayinput = 0;
+		int monthinput = 0;
+		int yearinput = 0;
+		
+		System.out.print("Enter a date (like 2015 10 31): ");
+		yearinput = sc.nextInt();
+		monthinput = sc.nextInt();
+		dayinput = sc.nextInt();
+		System.out.println();
 		System.out.println("You have the following appointments on " + dayinput + "/" + monthinput + "/" + yearinput + ":");
 		list.find(dayinput, monthinput, yearinput);
 	}

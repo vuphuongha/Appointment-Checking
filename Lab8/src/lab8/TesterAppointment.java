@@ -1,5 +1,4 @@
 package lab8;
-
 import java.util.Scanner;
 
 public class TesterAppointment {
@@ -23,15 +22,20 @@ public class TesterAppointment {
 			yearinput = sc.nextInt();
 			monthinput = sc.nextInt();
 			dayinput = sc.nextInt();
+			
 			if(monthinput>=1 && monthinput<=12&& dayinput >=1 && dayinput<=31) {
 				correctdate = true;
-			}
+		//	}else if (monthinput==(2 * monthinput +1) && monthinput== 8 && monthinput==10&& monthinput==12) {
+		//		correctdate = dayinput>=1 && dayinput<=31;
+		//	}else if (monthinput == 4 && monthinput == 6 && monthinput == 9 && monthinput == 11) {
+		//		correctdate = dayinput >=1 && dayinput < 30;
+		//	}
 			if(!correctdate) {
 				System.out.println("Invalid date");
 			}
 		}
 		System.out.println("You have the following appointments on " + dayinput + "/" + monthinput + "/" + yearinput + ":");
-		list.find(dayinput, monthinput, yearinput);
+		list.find(dayinput, monthinput,  yearinput);
 	}
-	
+}
 }

@@ -1,10 +1,10 @@
 package lab8;
 
-public class Appointment {	
+public abstract class Appointment {	
 
-	public String description;
-	public int day;
-	public int month;
+	 String description;
+	 int day;
+	 int month;
 	public int year;
 	
     public Appointment (String description, int day, int month, int year) {
@@ -13,14 +13,15 @@ public class Appointment {
     	this.month = month;
     	this.year = year;
     }
-    public boolean occursOn(int day, int month, int year) {
-    	if(getDay() == day && getMonth() == month && getYear() == year) {
-    		return true;
-    	}else {
-    		return false;
+    abstract boolean occursOn(String description, int day, int month, int year);
+    
+    //	if(getDay() == day && getMonth() == month && getYear() == year) {
+    //		return true;
+    //	}else {
+    //		return false;
     		
-    	}
-    }
+    //	}
+    //}
     public String getDescription() {
     	return description;
     	

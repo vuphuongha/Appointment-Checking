@@ -13,7 +13,7 @@ public class AppointmentChecking {
 	}
 	public void find(int day, int month, int year) {
 		for (Appointment a: appointments) {
-			if(a.occursOn(day, month, year)) {
+			if(a.occursOn(toString(),  day,  month,  year)) {
 				System.out.println(a.getDescription());								
 			}
 			}

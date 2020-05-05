@@ -5,7 +5,10 @@ public class Daily extends Appointment{
 		super(description, day, month, year);
 
 	}
-	public boolean occursOn(int day, int mon, int year) {
+
+	@Override
+	boolean occursOn(String description, int day, int month, int year) {
+		// TODO Auto-generated method stub
 		return true;
 	}
 }

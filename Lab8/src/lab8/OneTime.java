@@ -5,4 +5,9 @@ public class OneTime extends Appointment {
 		super(description, day, month, year);
 
 	}
+
+	@Override
+	boolean occursOn(String description, int day, int month, int year) {
+		return false;
+	}
 }

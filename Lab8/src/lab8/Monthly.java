@@ -4,13 +4,14 @@ public class Monthly extends Appointment {
 		super(description, day, month, year);
 
 	}
-	public boolean occursOn(int day, int month, int year) {
+
+	@Override
+	boolean occursOn(String description, int day, int month, int year) {
 		if(getDay() == day) {
 			return true;
 		}else {
 			return false;
-			
-		}
 	}
 	
+}
 }

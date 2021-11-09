@@ -15,13 +15,6 @@ public abstract class Appointment {
     }
     abstract boolean occursOn(String description, int day, int month, int year);
     
-    //	if(getDay() == day && getMonth() == month && getYear() == year) {
-    //		return true;
-    //	}else {
-    //		return false;
-    		
-    //	}
-    //}
     public String getDescription() {
     	return description;
     	

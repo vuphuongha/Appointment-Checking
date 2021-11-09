@@ -12,3 +12,5 @@ public class Daily extends Appointment{
 		return true;
 	}
 }
+
+
